@@ -9,8 +9,6 @@
 //
 // - Every message from the mesh which is sent to the gateway node will be published to "painlessMesh/from/NNNN" where NNNN
 //   is the nodeId from which the packet was sent.
-//
-//
 //************************************************************
 //#include <Arduino.h>
 #include "painlessMesh.h"
@@ -20,11 +18,9 @@
 #define   MESH_PREFIX     "whateverYouLike"
 #define   MESH_PASSWORD   "somethingSneaky"
 #define   MESH_PORT       5555
-
 // WiFi credentials: should match your access point!
 #define   STATION_SSID     "Vodafone-uaa2.4"
 #define   STATION_PASSWORD "gnomoluna6"
-
 #define   HOSTNAME         "MQTT_BridgeEmme"
 
 Scheduler userScheduler;   // to control your personal task
@@ -42,18 +38,14 @@ IPAddress myIP(0,0,0,0);
 // hivemq pubblic broker address and port
 char mqttBroker[]  = "broker.hivemq.com";
 #define MQTTPORT 1883
-
 // topic's suffix: everyone can publish/subscribe to this public broker,
 // you have to change the following 2 defines
 #define PUBPLISHSUFFIX             "emmefreeze/from/"
 #define SUBSCRIBESUFFIX            "emmefreeze/to/"
-
 #define PUBPLISHFROMGATEWAYSUFFIX  PUBPLISHSUFFIX "gateway"
-
 #define CHECKCONNDELTA 60     // check interval ( seconds ) for mqtt connection
 
 PubSubClient mqttClient;
-
 
 bool calc_delay = false;
 SimpleList<uint32_t> nodes;
@@ -62,10 +54,7 @@ char buff[512];
 uint32_t nexttime=0;
 uint8_t  initialized=0;
 
-
 //Task taskSendMessage( TASK_SECOND * 1 , TASK_FOREVER, &sendMessage );
-
-
 
 // messages received from the mqtt broker
 void mqttCallback(char* topic, uint8_t* payload, unsigned int length) 
@@ -122,19 +111,11 @@ void receivedCallback( const uint32_t &from, const String &msg )
   String topic = PUBPLISHSUFFIX + String(from);
   mqttClient.publish(topic.c_str(), msg.c_str());
   }
-
-
-
-
 void newConnectionCallback(uint32_t nodeId) 
   {
   Serial.printf("--> Start: New Connection, nodeId = %u\n", nodeId);
   Serial.printf("--> Start: New Connection, %s\n", mesh.subConnectionJson(true).c_str());
   }
-
-
-
-
 void changedConnectionCallback() 
   {
   Serial.printf("Changed connections\n");
@@ -153,26 +134,15 @@ void changedConnectionCallback()
 
   sprintf(buff,"Nodes:%d",nodes.size());
   }
-
-
-
-
 void nodeTimeAdjustedCallback(int32_t offset) 
   {
   Serial.printf("Adjusted time %u Offset = %d\n", mesh.getNodeTime(),offset);
   }
-
-
-
-
 void onNodeDelayReceived(uint32_t nodeId, int32_t delay)
   {
   Serial.printf("Delay from node:%u delay = %d\n", nodeId,delay);
   }
-
-
-
-
+  
 void reconnect()
 {
   //byte mac[6];
@@ -207,25 +177,14 @@ void reconnect()
     }
 }
 
-
-
-
-
-
 IPAddress getlocalIP() 
   {
   return IPAddress(mesh.getStationIP());
   }
 
-
-
-
-
 void setup() 
   {
   Serial.begin(115200);
-
- 
 
   //mesh.setDebugMsgTypes( ERROR | MESH_STATUS | CONNECTION | SYNC | COMMUNICATION | MSG_TYPES | REMOTE ); // all types on except GENERAL
   //mesh.setDebugMsgTypes( ERROR | MESH_STATUS | CONNECTION | SYNC | COMMUNICATION | GENERAL | MSG_TYPES | REMOTE ); // all types on
@@ -263,11 +222,6 @@ void setup()
   mqttClient.setCallback(mqttCallback);  
   mqttClient.setClient(wifiClient);
   }
-
-
-
-
-
 
 void loop() 
   {

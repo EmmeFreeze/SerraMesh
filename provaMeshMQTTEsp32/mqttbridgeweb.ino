@@ -19,8 +19,6 @@
 //#include <Arduino.h>
 #include "painlessMesh.h"
 #include "PubSubClient.h"
-#include "Button2.h"
-#include <TFT_eSPI.h>
 #ifdef ESP8266
 #include "Hash.h"
 #include <ESPAsyncTCP.h>
@@ -36,10 +34,10 @@
 #define   MESH_PORT       5555
 
 // WiFi credentials: should match your access point!
-#define   STATION_SSID     "MyAPSSID"
-#define   STATION_PASSWORD "MyWirelessPass"
+#define   STATION_SSID     "Vodafone-uaa2.4"
+#define   STATION_PASSWORD "gnomoluna6"
 
-#define   HOSTNAME         "MQTT_Bridge"
+#define   HOSTNAME         "MQTT_BridgeEmme"
 
 Scheduler userScheduler;   // to control your personal task
 
@@ -63,40 +61,14 @@ char mqttBroker[]  = "broker.hivemq.com";
 
 // topic's suffix: everyone can publish/subscribe to this public broker,
 // you have to change the following 2 defines
-#define PUBPLISHSUFFIX             "painlessMesh/from/"
-#define SUBSCRIBESUFFIX            "painlessMesh/to/"
+#define PUBPLISHSUFFIX             "emmefreeze/from/"
+#define SUBSCRIBESUFFIX            "emmefreeze/to/"
 
 #define PUBPLISHFROMGATEWAYSUFFIX  PUBPLISHSUFFIX "gateway"
 
 #define CHECKCONNDELTA 60     // check interval ( seconds ) for mqtt connection
 
 PubSubClient mqttClient;
-
-// TFT start
-#ifndef TFT_DISPOFF
-#define TFT_DISPOFF 0x28
-#endif
-
-#ifndef TFT_SLPIN
-#define TFT_SLPIN   0x10
-#endif
-
-#define TFT_MOSI        19
-#define TFT_SCLK        18
-#define TFT_CS          5
-#define TFT_DC          16
-#define TFT_RST         23
-
-#define TFT_BL          4   // Display backlight control pin
-#define ADC_EN          14  //ADC_EN is the ADC detection enable port
-#define ADC_PIN         34
-#define BUTTON_1        35
-#define BUTTON_2        0
-
-TFT_eSPI tft = TFT_eSPI(135, 240); // Invoke custom library
-// TFT end
-Button2 btn1(BUTTON_1);
-Button2 btn2(BUTTON_2);
 
 bool calc_delay = false;
 SimpleList<uint32_t> nodes;
@@ -160,9 +132,6 @@ void mqttCallback(char* topic, uint8_t* payload, unsigned int length)
   }
 
 
-
-
-
 // Needed for painless library
 
 // messages received from painless mesh network
@@ -173,17 +142,11 @@ void receivedCallback( const uint32_t &from, const String &msg )
   mqttClient.publish(topic.c_str(), msg.c_str());
   }
 
-
-
-
 void newConnectionCallback(uint32_t nodeId) 
   {
   Serial.printf("--> Start: New Connection, nodeId = %u\n", nodeId);
   Serial.printf("--> Start: New Connection, %s\n", mesh.subConnectionJson(true).c_str());
   }
-
-
-
 
 void changedConnectionCallback() 
   {
@@ -202,7 +165,6 @@ void changedConnectionCallback()
   calc_delay = true;
 
   sprintf(buff,"Nodes:%d",nodes.size());
-  tft.drawString(buff, 0, 32);
   }
 
 
@@ -244,7 +206,6 @@ void reconnect()
       Serial.println("Connected");  
       mqttClient.publish(PUBPLISHFROMGATEWAYSUFFIX,"Ready!");
       mqttClient.subscribe(SUBSCRIBESUFFIX "#");
-      tft.drawString("Mqtt connected", 0, 96);
       } 
     else
       {
@@ -287,27 +248,6 @@ String scanprocessor(const String& var)
 void setup() 
   {
   Serial.begin(115200);
-
-  // TFT
-  tft.init();
-  tft.setRotation(1);
-  tft.fillScreen(TFT_BLACK);
-  //tft.setTextSize(4);
-  tft.setTextColor(TFT_GREEN,TFT_BLACK);
-  tft.setCursor(0, 0);
-  tft.setTextDatum(MC_DATUM);
-  tft.setTextSize(2);
-
-  if (TFT_BL > 0) 
-    { // TFT_BL has been set in the TFT_eSPI library in the User Setup file TTGO_T_Display.h
-    pinMode(TFT_BL, OUTPUT); // Set backlight pin to output mode
-    digitalWrite(TFT_BL, TFT_BACKLIGHT_ON); // Turn backlight on. TFT_BACKLIGHT_ON has been set in the TFT_eSPI library in the User Setup file TTGO_T_Display.h
-    }
-  tft.fillScreen(TFT_BLACK);
-  tft.setTextDatum(TL_DATUM);
-  tft.drawString("MqttBridge 1.0.0", 0, 0);
-  //tft.setTextDatum(MC_DATUM);
-  //tft.drawString("LeftButton:", tft.width() / 2, tft.height() / 2 - 16);
 
   //mesh.setDebugMsgTypes( ERROR | MESH_STATUS | CONNECTION | SYNC | COMMUNICATION | MSG_TYPES | REMOTE ); // all types on except GENERAL
   //mesh.setDebugMsgTypes( ERROR | MESH_STATUS | CONNECTION | SYNC | COMMUNICATION | GENERAL | MSG_TYPES | REMOTE ); // all types on
@@ -364,16 +304,11 @@ void setup()
   mesh.initOTAReceive("bridge");
 
   sprintf(buff,"Id:%d",mesh.getNodeId());
-  tft.drawString(buff, 0, 16);
   
   mqttClient.setServer(mqttBroker, MQTTPORT);
   mqttClient.setCallback(mqttCallback);  
   mqttClient.setClient(wifiClient);
   }
-
-
-
-
 
 
 void loop() 
@@ -386,7 +321,6 @@ void loop()
     {
     myIP = getlocalIP();
     Serial.println("My IP is " + myIP.toString());
-    tft.drawString("Ip:" + myIP.toString(), 0, 80);
     initialized = 1;
     }
   if ( ( millis() >= nexttime ) && ( initialized ) )
