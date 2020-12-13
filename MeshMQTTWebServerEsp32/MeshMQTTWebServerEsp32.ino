@@ -3,11 +3,11 @@
 //
 // connect to a another network and relay messages from a MQTT broker to the nodes of the mesh network.
 //
-// - To send a message to a mesh node, you can publish it to "painlessMesh/to/NNNN" where NNNN equals the nodeId.
-// - To broadcast a message to all nodes in the mesh you can publish it to "painlessMesh/to/broadcast".
-// - When you publish "getNodes" to "painlessMesh/to/gateway" you receive the mesh topology as JSON
+// - To send a message to a mesh node, you can publish it to "emmefreeze/to/NNNN" where NNNN equals the nodeId.
+// - To broadcast a message to all nodes in the mesh you can publish it to "emmefreeze/to/broadcast".
+// - When you publish "getNodes" to "emmefreeze/to/gateway" you receive the mesh topology as JSON
 //
-// - Every message from the mesh which is sent to the gateway node will be published to "painlessMesh/from/NNNN" where NNNN
+// - Every message from the mesh which is sent to the gateway node will be published to "emmefreeze/from/NNNN" where NNNN
 //   is the nodeId from which the packet was sent.
 //
 // - The web server has only 3 pages:
