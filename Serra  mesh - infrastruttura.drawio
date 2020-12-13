@@ -1,1 +1,16 @@
-<mxfile host="app.diagrams.net" modified="2020-12-13T00:33:43.364Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" version="14.0.1" etag="lSpbtDVJqKDMH0-w_Z6v" type="github"><diagram id="KtYnDnJUeSTWCTTDEsZ9">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-12-13T00:35:05.674Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="4lemHeZrLRY6HRliRn5O" version="14.0.1" type="github">
+  <diagram id="KtYnDnJUeSTWCTTDEsZ9" name="Page-1">
+    <mxGraphModel dx="1038" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="iDujMUlF39iX-u3SAnA6-2" value="" style="image;html=1;image=img/lib/clip_art/networking/Wireless_Router_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="30" y="220" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="iDujMUlF39iX-u3SAnA6-3" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.mouser.it/images/espressifsystems/lrg/ESP32-DevKitC-S_NEW_t.jpg;" vertex="1" parent="1">
+          <mxGeometry x="60" y="140" width="520" height="520" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
