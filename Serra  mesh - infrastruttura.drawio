@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2020-12-13T00:56:41.374Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="cFesa_O3p1m-CUPuIpzl" version="14.0.1" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-13T01:16:45.874Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="OZ9qIToqjsH-b1kHo9ga" version="14.0.1" type="github">
   <diagram id="KtYnDnJUeSTWCTTDEsZ9" name="Page-1">
-    <mxGraphModel dx="1038" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3460" dy="2996" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="iDujMUlF39iX-u3SAnA6-62" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fontSize=17;labelBackgroundColor=none;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="380" y="-100" width="760" height="650" as="geometry" />
+        </mxCell>
         <mxCell id="iDujMUlF39iX-u3SAnA6-23" value="" style="shape=mxgraph.signs.tech.computer;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
           <mxGeometry x="326.92" y="430" width="258" height="200" as="geometry" />
         </mxCell>
@@ -11,7 +14,7 @@
           <mxGeometry x="180" y="170" width="190" height="140" as="geometry" />
         </mxCell>
         <mxCell id="iDujMUlF39iX-u3SAnA6-3" value="Esp32 Master" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.mouser.it/images/espressifsystems/lrg/ESP32-DevKitC-S_NEW_t.jpg;" vertex="1" parent="1">
-          <mxGeometry x="440" y="210" width="110" height="110" as="geometry" />
+          <mxGeometry x="500" y="200" width="110" height="110" as="geometry" />
         </mxCell>
         <mxCell id="iDujMUlF39iX-u3SAnA6-4" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;exitX=1;exitY=0.66;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="iDujMUlF39iX-u3SAnA6-2" target="iDujMUlF39iX-u3SAnA6-3">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -20,7 +23,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="iDujMUlF39iX-u3SAnA6-5" value="Esp32 Nodes" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.mouser.it/images/espressifsystems/lrg/ESP32-DevKitC-S_NEW_t.jpg;" vertex="1" parent="1">
-          <mxGeometry x="624.92" y="80" width="120" height="120" as="geometry" />
+          <mxGeometry x="750" y="30" width="120" height="120" as="geometry" />
         </mxCell>
         <mxCell id="iDujMUlF39iX-u3SAnA6-7" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="iDujMUlF39iX-u3SAnA6-3" target="iDujMUlF39iX-u3SAnA6-5">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -35,10 +38,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="iDujMUlF39iX-u3SAnA6-9" value="Esp32 Nodes" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.mouser.it/images/espressifsystems/lrg/ESP32-DevKitC-S_NEW_t.jpg;" vertex="1" parent="1">
-          <mxGeometry x="630" y="320" width="100" height="100" as="geometry" />
+          <mxGeometry x="717" y="230" width="100" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="iDujMUlF39iX-u3SAnA6-15" value="&lt;font style=&quot;font-size: 24px&quot;&gt;Serra Mesh - Infrastruttura di rete&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
-          <mxGeometry x="190" y="40" width="370" height="20" as="geometry" />
+        <mxCell id="iDujMUlF39iX-u3SAnA6-15" value="&lt;font style=&quot;font-size: 34px&quot;&gt;Serra &lt;b&gt;Mesh 4.0&amp;nbsp;&lt;/b&gt;- Infrastruttura di rete&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="-160" width="580" height="30" as="geometry" />
         </mxCell>
         <mxCell id="iDujMUlF39iX-u3SAnA6-16" value="MQTT/HTTP" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="380" y="280" width="40" height="20" as="geometry" />
@@ -73,7 +76,7 @@
           <mxGeometry x="390" y="230" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="iDujMUlF39iX-u3SAnA6-29" value="C&amp;amp;C MSG" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="584.92" y="310" width="40" height="20" as="geometry" />
+          <mxGeometry x="620" y="330" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="iDujMUlF39iX-u3SAnA6-32" value="C&amp;amp;C MSG" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="540" y="160" width="40" height="20" as="geometry" />
@@ -81,8 +84,50 @@
         <mxCell id="iDujMUlF39iX-u3SAnA6-37" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;Funzionalità Web Interface&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="40" y="640" width="210" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="iDujMUlF39iX-u3SAnA6-39" value="&lt;ul style=&quot;font-size: 17px&quot;&gt;&lt;li style=&quot;font-size: 17px&quot;&gt;&lt;span&gt;Visualizzazione lista nodi&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 17px&quot;&gt;Visualizzazione stato singolo nodo&lt;/li&gt;&lt;li style=&quot;font-size: 17px&quot;&gt;edit configurazioni relative a nodo&lt;/li&gt;&lt;li style=&quot;font-size: 17px&quot;&gt;aggiornamento ota per tutti i dispositivi (1 solo fw)&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;fontSize=17;" vertex="1" parent="1">
-          <mxGeometry x="60" y="660" width="250" height="230" as="geometry" />
+        <mxCell id="iDujMUlF39iX-u3SAnA6-39" value="&lt;ul style=&quot;font-size: 17px&quot;&gt;&lt;li style=&quot;font-size: 17px&quot;&gt;&lt;span&gt;Visualizzazione lista nodi&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 17px&quot;&gt;Visualizzazione stato singolo nodo (serra)&lt;/li&gt;&lt;li style=&quot;font-size: 17px&quot;&gt;edit configurazioni relative a serra&lt;/li&gt;&lt;li style=&quot;font-size: 17px&quot;&gt;Modalità manuale / automatica&lt;/li&gt;&lt;li style=&quot;font-size: 17px&quot;&gt;gestione e notifica di eventi&lt;/li&gt;&lt;li style=&quot;font-size: 17px&quot;&gt;aggiornamento ota per tutti i dispositivi (1 fw per tutti devices)&lt;/li&gt;&lt;li style=&quot;font-size: 17px&quot;&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="30" y="650" width="290" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="iDujMUlF39iX-u3SAnA6-42" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://keep.google.com/u/0/media/v2/1NNCiuk_Tq6NRoojsDUEkkQRzcl9nkhmlQjtPRBQTJD498RoRFIREMlpViGXe2XN-Jxa-/1k3X3G2A-MFQ_lUAk7m-e_tTv3r7SDFK5LoQr0g9qyaZtlx7SJ2hzhZVxUDjcCA-UPD80?accept=image/gif,image/jpeg,image/jpg,image/png,image/webp,audio/aac&amp;sz=2400;" vertex="1" parent="1">
+          <mxGeometry x="312.92" y="960" width="234" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="iDujMUlF39iX-u3SAnA6-44" value="configurazione di un nodo&amp;nbsp; (serra 1 vaso)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=17;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="330" y="924" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="iDujMUlF39iX-u3SAnA6-45" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://keep.google.com/u/0/media/v2/1NNCiuk_Tq6NRoojsDUEkkQRzcl9nkhmlQjtPRBQTJD498RoRFIREMlpViGXe2XN-Jxa-/18cFS3uMq7WVmva0vQhSMM4MYhPPxhLIzwVFL31ITfayRnPmBnzVaFGvEuHSA9M3fwFcM?accept=image/gif,image/jpeg,image/jpg,image/png,image/webp,audio/aac&amp;sz=2400;" vertex="1" parent="1">
+          <mxGeometry x="41.99999999999994" y="960" width="234" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="iDujMUlF39iX-u3SAnA6-46" value="schermata di riepilogo nodo&amp;nbsp; (serra 1 vaso)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=17;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="49" y="924" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="iDujMUlF39iX-u3SAnA6-47" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://keep.google.com/u/0/media/v2/17zkSbmirmyN1Wzr-VBTlCIQg7h3IMEnj7MxcdrgRKJ0o1ZPNln_ZnvpsN5JLBoU5xr2J/1cgA7-kwx2FocixLY3-R1TIVTtN0ijWmyy1VvoxJ2mxuXDh_Zqxkiysbd4URh7vGns93X?accept=image/gif,image/jpeg,image/jpg,image/png,image/webp,audio/aac&amp;sz=2400;" vertex="1" parent="1">
+          <mxGeometry x="584.92" y="960" width="234" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="iDujMUlF39iX-u3SAnA6-48" value="Schermata aggiornamento OTA&lt;br&gt;(+ update fw nextion display)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=17;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="560" y="924" width="280" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="iDujMUlF39iX-u3SAnA6-51" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;fontSize=17;exitX=0.446;exitY=-0.011;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.526;entryY=1.143;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="iDujMUlF39iX-u3SAnA6-23" target="iDujMUlF39iX-u3SAnA6-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="380" as="sourcePoint" />
+            <mxPoint x="420" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iDujMUlF39iX-u3SAnA6-54" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="iDujMUlF39iX-u3SAnA6-9" target="iDujMUlF39iX-u3SAnA6-55">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="750" y="350" as="sourcePoint" />
+            <mxPoint x="840" y="125" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iDujMUlF39iX-u3SAnA6-55" value="Esp32 Nodes" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.mouser.it/images/espressifsystems/lrg/ESP32-DevKitC-S_NEW_t.jpg;" vertex="1" parent="1">
+          <mxGeometry x="980" y="280" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="iDujMUlF39iX-u3SAnA6-59" value="&lt;span style=&quot;font-size: 12px ; background-color: rgb(255 , 255 , 255)&quot;&gt;Esp32 Nodes&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="750" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iDujMUlF39iX-u3SAnA6-64" value="" style="points=[[0.015,0.015,0],[0.985,0.015,0],[0.985,0.985,0],[0.015,0.985,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];verticalLabelPosition=bottom;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.rect;prIcon=mesh_access_point;fillColor=#FAFAFA;strokeColor=#005073;labelBackgroundColor=none;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="410" y="510" width="64" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="iDujMUlF39iX-u3SAnA6-65" value="" style="points=[[0.015,0.015,0],[0.985,0.015,0],[0.985,0.985,0],[0.015,0.985,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];verticalLabelPosition=bottom;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.rect;prIcon=mesh_access_point;fillColor=#FAFAFA;strokeColor=#005073;labelBackgroundColor=none;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="720" y="390" width="128" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
